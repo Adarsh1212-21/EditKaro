@@ -171,7 +171,7 @@ img { max-width: 100%; display: block; }
 
 .hero-cta { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
 
-/* Ticker */
+
 .hero-ticker {
   position: relative; z-index: 1;
   border-top: 1px solid var(--border);
@@ -191,7 +191,6 @@ img { max-width: 100%; display: block; }
 }
 @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 
-/* ===== STATS ===== */
 .stats {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -214,7 +213,7 @@ img { max-width: 100%; display: block; }
 .stat span { font-size: 2rem; color: var(--accent); }
 .stat p { color: var(--muted); font-size: .9rem; margin-top: .25rem; }
 
-/* ===== SERVICES ===== */
+
 .services-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -232,7 +231,7 @@ img { max-width: 100%; display: block; }
 .service-card h3 { font-size: 1.2rem; margin-bottom: .5rem; font-weight: 600; }
 .service-card p { color: var(--muted); font-size: .9rem; }
 
-/* ===== PROCESS ===== */
+
 .steps {
   display: flex;
   align-items: flex-start;
@@ -251,14 +250,14 @@ img { max-width: 100%; display: block; }
 .step p { color: var(--muted); font-size: .88rem; }
 .step-arrow { font-size: 2rem; color: var(--border); align-self: center; padding-top: .5rem; }
 
-/* ===== PORTFOLIO PREVIEW ===== */
+
 .portfolio-preview-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
 }
 .pp-card {
-  aspect-ratio: 9/16;
+  aspect-ratio: 16/9;
   background: var(--c, var(--surface));
   border-radius: var(--radius);
   display: flex; flex-direction: column;
@@ -340,7 +339,7 @@ img { max-width: 100%; display: block; }
 .testi-card p { color: var(--muted); font-style: italic; margin-bottom: 1.5rem; }
 .testi-author { font-size: .85rem; font-weight: 600; }
 
-/* ===== PAGE HERO ===== */
+
 .page-hero {
   padding: calc(var(--nav-h) + 4rem) 2rem 4rem;
   text-align: center;
@@ -390,6 +389,11 @@ img { max-width: 100%; display: block; }
   overflow: hidden;
   transition: transform .2s, opacity .3s;
 }
+
+.port-card:nth-child(1) .port-thumb { background: linear-gradient(135deg,#e63946,#1d3557); }
+.port-card:nth-child(2) .port-thumb { background: linear-gradient(135deg,#ff006e,#8338ec); }
+.port-card:nth-child(3) .port-thumb { background: linear-gradient(135deg,#f4a261,#e76f51); }
+.port-card:nth-child(4) .port-thumb { background: linear-gradient(135deg,#264653,#2a9d8f); }
 .port-card.hidden { display: none; }
 .port-card:hover { transform: translateY(-4px); }
 .port-thumb {
